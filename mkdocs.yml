@@ -1,0 +1,13 @@
+site_name: bon time
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - toc.integrate
+    - search.highlight
+  palette: 
+    primary: indigo
+    accent: teal
+  font: 
+    text: Roboto
+    code: JetBrains Mono
