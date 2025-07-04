@@ -1,13 +1,51 @@
-site_name: bon time
+site_name: "TraceMémoire"
 theme:
   name: material
   features:
     - navigation.tabs
-    - toc.integrate
     - search.highlight
+    - search.share
   palette: 
-    primary: indigo
-    accent: teal
-  font: 
-    text: Roboto
-    code: JetBrains Mono
+    - scheme: green-light
+      toggle:
+        icon: material/white-balance-sunny
+        name: 切换深色模式
+    - scheme: forest-dark
+      toggle:
+        icon: material/weather-night
+        name: 切换浅色模式
+  language: en
+  favicon: images/favicon-32x32.png
+  icon: 
+    logo: material/heart-box-outline
+  navigation:
+    depth: 1  # 只显示一级标题
+extra_css:
+  - stylesheets/extra.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+nav:
+- 首页: index.md
+- 食物: 
+  - 概述: food/概述.md
+  - 烘焙:
+    - 鸡胸肉: food/烘焙/鸡胸肉.md
+  - 蒸煮:
+    - 西蓝花: food/蒸煮/西蓝花.md
+- 运动:
+  - 俯卧撑: sports/俯卧撑.md
+  - 引体向上: sports/引体向上.md
+- 关于: 
+  - 我: about/我.md
+extra:
+  generator: true
+plugins:
+  - awesome-pages
+  - search
+copyright: "Copyright © bon"
