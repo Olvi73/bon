@@ -34,11 +34,15 @@ nav:
 - 首页: index.md
 - 食物: 
   - 概述: food/概述.md
+  - 面点:
+    - 馒头: food/面点/馒头.md
   - 烘焙:
+    - 戚风蛋糕: food/烘焙/戚风蛋糕.md
     - 鸡胸肉: food/烘焙/鸡胸肉.md
   - 蒸煮:
     - 西蓝花: food/蒸煮/西蓝花.md
 - 运动:
+  - 体能: sports/体能.md
   - 俯卧撑: sports/俯卧撑.md
   - 引体向上: sports/引体向上.md
 - 关于: 
